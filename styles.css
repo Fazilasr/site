@@ -873,3 +873,16 @@ body.dark .about-text {
     max-width: 400px; /* Set a max width to center on larger screens */
     padding: 10px 15px;
 }
+
+/* Ensure four creatures appear in a row on mobile */
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Ensure the subtitle text is displayed in a single line */
+    .subtitle {
+        white-space: nowrap;
+        font-size: 1rem; /* Adjust size if needed for readability */
+    }
+}
